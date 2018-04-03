@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background: #ccc;
+}
+.swiper-container {
+    width: 100vw;
+    height: 30vh;
+    background: pink;
+    font-size: 20px;
+} 
+.swiper-slide img{
+	width: 100vw;
+	height: 30vh;
+}
+.type{
+	width: 100%;
+	height: 10vh;
+}
+.project,.done{
+	width: 50%;
+	height: 10vh;
+	float: left;
+	text-align: center;
+	line-height: 10vh;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+}
+.project.active{
+	background: #3f3;
+}
+.done.active{
+	background: #ff3;
+}
+.content{
+	width: 100%;
+	height: 50vh;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+}
+.content ul{
+	width: 100vw;
+	height: auto;
+	overflow: hidden;
+}
+.content ul li{
+	width: 100vw;
+	height: 10vh;
+	position: relative;
+	border-bottom: 1px solid red;
+}
+.itemlist li p{
+	width: 60vw;
+	height: 10vh;
+	padding-left: 5vw;
+	float: left;
+	line-height: 10vh;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+
+}
+.itemlist li time{
+	width: 30vw;
+	height: 10vh;
+	float: left;
+	text-align: center;
+}
+.itemlist li span{
+	width: 10vw;
+	height: 10vh;
+	text-align: center;
+	line-height: 6vh;
+	display: block;
+	float: left;
+}
+.itemlist li span.active{
+	color: red;
+}
+.itemlist li div{
+	width: 20vw;
+	height: 10vh;
+	background: red;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: -20vw;
+	line-height: 10vh;
+}
+.add{	
+	width: 100vw;
+	height: 10vh;
+	background: pink;
+	text-align: center;
+	line-height: 10vh;
+	color: #fff;
+	font-weight: bold;
+}
+.mask{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	display: none;
+}
+.inputarea{
+	width: 100vw;
+	height: 62vh;
+	transform: translateY(-62vh);
+
+}
+#text{
+	width: 100%;
+	height: 40vh;
+	border: none;
+	resize: none;
+	padding: 10vw;
+	font-size: 16px;
+	display: block;
+}
+.sumbit,.update{
+	width: 100vw;
+	height: 10vh;
+	background: #f33;
+	text-align: center;
+	line-height: 10vh;
+	color: #fff;
+	font-size: 18px;
+}
+.update{
+	display: none;
+}
+.cancel{
+	width: 9vw;
+	height: 5vh;
+	margin: 3vh auto;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 16px;
+	line-height: 5vh;
+	border-radius: 50%;
+	text-align: center;
+}
